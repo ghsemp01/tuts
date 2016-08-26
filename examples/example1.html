@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Angular</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/codemirror.css">
+
+	 <script src="../js/angular.min.js"></script>
+	 <script src="../js/angular.ui.router.js"></script>
+	 <script src="../js/edit/matchbrackets.js"></script>
+	 <script src="../js/codemirror.js"></script>
+	 <script src="../js/htmlmixed/htmlmixed.js"></script>
+	 <script src="../js/xml/xml.js"></script>
+	 <script src="../js/javascript/javascript.js"></script>
+<style>
+  .CodeMirror { height: auto; border: 1px solid #ddd; }
+  .CodeMirror-scroll { max-height: 500px; }
+  .CodeMirror pre { padding-left: 7px; line-height: 1.25; }
+
+</style>
+</head>
+<body>
+<div class="container">
+<h3>test</h3>
+	<textarea id="code" name="code">
+		
+		
+
+	</textarea>
+</div>
+<script>
+	 var editor = CodeMirror.fromTextArea(document.getElementById("code"), 
+	 	{
+	 		autoCloseBrackets: true,
+	 		mode: "text/javascript",
+	 		lineNumbers: true
+	 	}
+
+	 	);
+</script>
+</div>
+
+
+
+
+   
+  
+    
+</body>
+</html>
