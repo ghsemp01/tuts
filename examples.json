@@ -1,248 +1,247 @@
 [
   {
-    "name": "snapshot01",
+    "name": "ss1",
     "number": 1,
-    "message": "Starter HTML page with a text input",
+    "message": "Simple HTML5 page",
     "files": [
       "index.html"
     ],
-    "url": "https://github.com/curran/screencasts/tree/gh-pages/introToAngular/examples/snapshots/snapshot01",
-    "runUrl": "http://curran.github.io/screencasts/introToAngular/examples/snapshots/snapshot01"
+    "url": "index.html",
+    "runUrl": "index.html"
   },
   {
-    "name": "snapshot02",
+    "name": "ss2",
     "number": 2,
-    "message": "Added keyup event listener on textInput.",
+    "message": "A page with an input and a message",
     "files": [
       "index.html"
     ],
-    "url": "https://github.com/curran/screencasts/tree/gh-pages/introToAngular/examples/snapshots/snapshot02",
-    "runUrl": "http://curran.github.io/screencasts/introToAngular/examples/snapshots/snapshot02"
+    "url": "index.html",
+    "runUrl": "index.html"
   },
   {
-    "name": "snapshot03",
+    "name": "ss3",
     "number": 3,
-    "message": "Extracting text from the text input as it changes.",
+    "message": "Adding key up listener to an input",
     "files": [
       "index.html"
     ],
-    "url": "https://github.com/curran/screencasts/tree/gh-pages/introToAngular/examples/snapshots/snapshot03",
-    "runUrl": "http://curran.github.io/screencasts/introToAngular/examples/snapshots/snapshot03"
+    "url": "index.html",
+    "runUrl": "index.html"
   },
   {
-    "name": "snapshot04",
+    "name": "ss4",
     "number": 4,
     "message": "Updating a span when input text changes using the DOM API.",
     "files": [
       "index.html"
     ],
-    "url": "https://github.com/curran/screencasts/tree/gh-pages/introToAngular/examples/snapshots/snapshot04",
-    "runUrl": "http://curran.github.io/screencasts/introToAngular/examples/snapshots/snapshot04"
+    "url": "index.html",
+    "runUrl": "index.html"
   },
   {
-    "name": "snapshot05",
+    "name": "ss5",
     "number": 5,
     "message": "Updating a span when input text changes using jQuery.",
     "files": [
       "index.html"
     ],
-    "url": "https://github.com/curran/screencasts/tree/gh-pages/introToAngular/examples/snapshots/snapshot05",
-    "runUrl": "http://curran.github.io/screencasts/introToAngular/examples/snapshots/snapshot05"
+    "url": "index.html",
+    "runUrl": "index.html"
   },
   {
-    "name": "snapshot06",
+    "name": "ss6",
     "number": 6,
-    "message": "Updating a span when input text changes using Backbone.",
+    "message": "Updating a span when input text changes using Angular.",
     "files": [
       "index.html"
     ],
-    "url": "https://github.com/curran/screencasts/tree/gh-pages/introToAngular/examples/snapshots/snapshot06",
-    "runUrl": "http://curran.github.io/screencasts/introToAngular/examples/snapshots/snapshot06"
+    "url": "index.html",
+    "runUrl": "index.html"
   },
   {
-    "name": "snapshot07",
+    "name": "ss7",
     "number": 7,
-    "message": "Updating a template when input text changes using Angular.",
+    "message": "Different things we can do with angular",
     "files": [
       "index.html"
     ],
-    "url": "https://github.com/curran/screencasts/tree/gh-pages/introToAngular/examples/snapshots/snapshot07",
-    "runUrl": "http://curran.github.io/screencasts/introToAngular/examples/snapshots/snapshot07"
+    "url": "index.html",
+    "runUrl": "index.html"
   },
   {
-    "name": "snapshot08",
+    "name": "ss8",
     "number": 8,
-    "message": "Data binding with many text inputs.",
+    "message": "Different ways to bind data",
     "files": [
       "index.html"
     ],
-    "url": "https://github.com/curran/screencasts/tree/gh-pages/introToAngular/examples/snapshots/snapshot08",
-    "runUrl": "http://curran.github.io/screencasts/introToAngular/examples/snapshots/snapshot08"
+    "url": "index.html",
+    "runUrl": "index.html"
   },
   {
-    "name": "snapshot09",
+    "name": "ss9",
     "number": 9,
-    "message": "First name and last name.",
+    "message": "Initializing the model using an Angular controller",
     "files": [
       "index.html"
     ],
-    "url": "https://github.com/curran/screencasts/tree/gh-pages/introToAngular/examples/snapshots/snapshot09",
-    "runUrl": "http://curran.github.io/screencasts/introToAngular/examples/snapshots/snapshot09"
+    "url": "index.html",
+    "runUrl": "index.html"
   },
   {
-    "name": "snapshot10",
+    "name": "ss10",
     "number": 10,
-    "message": "Initializing the model using an Angular controller, defined with a global function.",
+    "message": "Another angular controller example",
     "files": [
-      "index.html"
+      "index.html", "app.js"
     ],
-    "url": "https://github.com/curran/screencasts/tree/gh-pages/introToAngular/examples/snapshots/snapshot10",
-    "runUrl": "http://curran.github.io/screencasts/introToAngular/examples/snapshots/snapshot10"
+    "url": "index.html",
+    "runUrl": "index.html"
   },
   {
-    "name": "snapshot11",
+    "name": "ss11",
     "number": 11,
-    "message": "Initializing the model using an Angular controller, defined within an Angular module.",
+    "message": "Ng Pluralize directive",
     "files": [
-      "index.html"
+      "index.html", "app.js"
     ],
-    "url": "https://github.com/curran/screencasts/tree/gh-pages/introToAngular/examples/snapshots/snapshot11",
-    "runUrl": "http://curran.github.io/screencasts/introToAngular/examples/snapshots/snapshot11"
+    "url": "index.html",
+    "runUrl": "index.html"
   },
   {
-    "name": "snapshot12",
+    "name": "ss12",
     "number": 12,
-    "message": "Changing scope values asynchronously - updates don't propagate without .apply().",
+    "message": "ng-show, ng-switch",
     "files": [
-      "index.html"
+      "index.html", "app.js"
     ],
-    "url": "https://github.com/curran/screencasts/tree/gh-pages/introToAngular/examples/snapshots/snapshot12",
-    "runUrl": "http://curran.github.io/screencasts/introToAngular/examples/snapshots/snapshot12"
+     "url": "index.html",
+    "runUrl": "index.html"
   },
   {
-    "name": "snapshot13",
+    "name": "ss13",
     "number": 13,
-    "message": "Changing scope values asynchronously - updates propagate .apply().",
+    "message": "On Click",
     "files": [
-      "index.html"
+      "index.html","app.js"
     ],
-    "url": "https://github.com/curran/screencasts/tree/gh-pages/introToAngular/examples/snapshots/snapshot13",
-    "runUrl": "http://curran.github.io/screencasts/introToAngular/examples/snapshots/snapshot13"
+    "url": "index.html",
+    "runUrl": "index.html"
   },
   {
-    "name": "snapshot14",
+    "name": "ss14",
     "number": 14,
-    "message": "Looping over lists in templates using ng-repeat.",
+    "message": "Add new pokemon in our list.",
     "files": [
-      "index.html"
+       "index.html","app.js"
     ],
-    "url": "https://github.com/curran/screencasts/tree/gh-pages/introToAngular/examples/snapshots/snapshot14",
-    "runUrl": "http://curran.github.io/screencasts/introToAngular/examples/snapshots/snapshot14"
+    "url": "index.html",
+    "runUrl": "index.html"
   },
   {
-    "name": "snapshot15",
+    "name": "ss15",
     "number": 15,
-    "message": "Adding entries to a list using forms and ng-submit.",
+    "message": "Adding styles",
     "files": [
-      "index.html"
+      "index.html","app.js"
     ],
-    "url": "https://github.com/curran/screencasts/tree/gh-pages/introToAngular/examples/snapshots/snapshot15",
-    "runUrl": "http://curran.github.io/screencasts/introToAngular/examples/snapshots/snapshot15"
+      "url": "index.html",
+    "runUrl": "index.html"
   },
   {
-    "name": "snapshot16",
+    "name": "ss16",
     "number": 16,
-    "message": "Clearing the entered name on submit using data binding.",
+    "message": "Removing item in the list",
     "files": [
-      "index.html"
+      "index.html", "app.js"
     ],
-    "url": "https://github.com/curran/screencasts/tree/gh-pages/introToAngular/examples/snapshots/snapshot16",
-    "runUrl": "http://curran.github.io/screencasts/introToAngular/examples/snapshots/snapshot16"
+      "url": "index.html",
+    "runUrl": "index.html"
   },
   {
-    "name": "snapshot17",
+    "name": "ss17",
     "number": 17,
-    "message": "Removing names from a list using ng-click.",
+    "message": "Filters and Custom Filters",
     "files": [
-      "index.html"
+      "index.html", "app.js"
     ],
-    "url": "https://github.com/curran/screencasts/tree/gh-pages/introToAngular/examples/snapshots/snapshot17",
-    "runUrl": "http://curran.github.io/screencasts/introToAngular/examples/snapshots/snapshot17"
+       "url": "index.html",
+    "runUrl": "index.html"
   },
   {
-    "name": "snapshot18",
+    "name": "ss18",
     "number": 18,
-    "message": "Enumerating objects - countries and their populations.",
+    "message": "Filters in our pokemon app",
     "files": [
-      "index.html"
+       "index.html", "app.js"
     ],
-    "url": "https://github.com/curran/screencasts/tree/gh-pages/introToAngular/examples/snapshots/snapshot18",
-    "runUrl": "http://curran.github.io/screencasts/introToAngular/examples/snapshots/snapshot18"
+     "url": "index.html",
+    "runUrl": "index.html"
   },
   {
-    "name": "snapshot19",
+    "name": "ss19",
     "number": 19,
-    "message": "Building a table.",
+    "message": "Legacy approach",
     "files": [
-      "index.html"
+      "home.html","about.html","contact.html"
     ],
-    "url": "https://github.com/curran/screencasts/tree/gh-pages/introToAngular/examples/snapshots/snapshot19",
-    "runUrl": "http://curran.github.io/screencasts/introToAngular/examples/snapshots/snapshot19"
+       "url": "home.html",
+       "runUrl": "home.html" 
   },
   {
-    "name": "snapshot20",
+    "name": "ss20",
     "number": 20,
-    "message": "Fetching JSON.",
+    "message": "Basic Routing",
     "files": [
-      "index.html",
-      "countries.json"
+      "index.html","app.js","pages/home.html","pages/about.html","pages/contact.html"
     ],
-    "url": "https://github.com/curran/screencasts/tree/gh-pages/introToAngular/examples/snapshots/snapshot20",
-    "runUrl": "http://curran.github.io/screencasts/introToAngular/examples/snapshots/snapshot20"
+       "url": "index.html",
+      "runUrl": "index.html"
   },
   {
-    "name": "snapshot21",
+    "name": "ss21",
     "number": 21,
-    "message": "Dependency injection syntax for minification.",
+    "message": "Add routes in our pokemon app",
     "files": [
       "index.html",
-      "countries.json"
+      "app.js"
     ],
-    "url": "https://github.com/curran/screencasts/tree/gh-pages/introToAngular/examples/snapshots/snapshot21",
-    "runUrl": "http://curran.github.io/screencasts/introToAngular/examples/snapshots/snapshot21"
+      "url": "index.html",
+      "runUrl": "index.html"
   },
   {
-    "name": "snapshot22",
+    "name": "ss22",
     "number": 22,
-    "message": "Adding search using Angular filters.",
+    "message": "Fetching JSON",
     "files": [
-      "index.html",
-      "countries.json"
+      "index.html",  "app.js",
+      "users.json"
     ],
-    "url": "https://github.com/curran/screencasts/tree/gh-pages/introToAngular/examples/snapshots/snapshot22",
-    "runUrl": "http://curran.github.io/screencasts/introToAngular/examples/snapshots/snapshot22"
+   "url": "index.html",
+    "runUrl": "index.html"
   },
   {
-    "name": "snapshot23",
+    "name": "ss23",
     "number": 23,
-    "message": "Sorting in ng-repeat using orderBy",
+    "message": "Service",
     "files": [
-      "index.html",
-      "countries.json"
+      "index.html",  "app.js","User.js",
+      "users.json"
     ],
-    "url": "https://github.com/curran/screencasts/tree/gh-pages/introToAngular/examples/snapshots/snapshot23",
-    "runUrl": "http://curran.github.io/screencasts/introToAngular/examples/snapshots/snapshot23"
+    "url": "index.html",
+      "runUrl": "index.html"
   },
   {
-    "name": "snapshot24",
+    "name": "ss24",
     "number": 24,
-    "message": "Sorting in descending order",
+    "message": "Improving our pokemon app",
     "files": [
-      "index.html",
-      "countries.json"
+     "index.html",  "app.js","Model.js","pokemons.json",
+      "users.json"
     ],
-    "url": "https://github.com/curran/screencasts/tree/gh-pages/introToAngular/examples/snapshots/snapshot24",
-    "runUrl": "http://curran.github.io/screencasts/introToAngular/examples/snapshots/snapshot24"
+   "url": "index.html",
+      "runUrl": "index.html"
   },
   {
     "name": "snapshot25",
@@ -569,26 +568,5 @@
     ],
     "url": "https://github.com/curran/screencasts/tree/gh-pages/introToAngular/examples/snapshots/snapshot49",
     "runUrl": "http://curran.github.io/screencasts/introToAngular/examples/snapshots/snapshot49"
-  },
-  {
-    "name": "snapshot50",
-    "number": 50,
-    "message": "Extracting factories and directives to separate modules using method chaining.",
-    "files": [
-      "index.html",
-      "country-detail.html",
-      "country-list.html",
-      "country.html",
-      "app.js",
-      "countriesFactory.js",
-      "countryControllers.js",
-      "countryDirective.js",
-      "countries.json",
-      "country_1.json",
-      "country_2.json",
-      "country_3.json"
-    ],
-    "url": "https://github.com/curran/screencasts/tree/gh-pages/introToAngular/examples/snapshots/snapshot50",
-    "runUrl": "http://curran.github.io/screencasts/introToAngular/examples/snapshots/snapshot50"
   }
 ]

@@ -15,6 +15,7 @@ app.config(function($routeProvider) {
     });
 });
 
+
 app.factory('examples', function($http){
 
   function getData(callback){
@@ -77,13 +78,9 @@ app.controller('ExampleDetailCtrl',
     function ($scope, $routeParams, $http, $sce, examples){
   examples.find($routeParams.exampleNumber, function(example) {
     $scope.example = example;
-    var examplePath = '../examples/snapshots/' + example.name;
-    $scope.runUrl = examplePath + '/index.html';
-    $http.get(examplePath + '/README.md').success(function(data) {
-      // Remove first line, as it appears elsewhere on the page (called 'message').
-      var md = data.split('\n').splice(1).join('\n');
-      $scope.readme = $sce.trustAsHtml(marked(md));
-    });
+    var examplePath = 'examples/'+example.name+"/";
+    $scope.runUrl = examplePath +example.runUrl;
+    
   });
 });
 
@@ -98,10 +95,11 @@ app.directive('file', function(){
     restrict: 'A',
     controller: function($scope, $http){
       var path = [
-        '../examples/snapshots',
+        'examples',
         $scope.example.name,
         $scope.file
       ].join('/');
+      console.log(path);
       $http.get(path).success(function(data) {
         if(typeof(data) === 'object'){
           // un-parse auto-parsed JSON files for presentation as text
