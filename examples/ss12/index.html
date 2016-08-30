@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app" ng-cloak>
+<head>
+	<meta charset="UTF-8" >
+	<title>Document</title>
+	<style>
+	[ng\:cloak], [ng-cloak], .ng-cloak{
+		display: none;
+	}
+	</style>
+</head>
+<body>
+	<div ng-controller="PokemonCtrl">
+		<h3>{{ title }}</h3>
+		<ng-pluralize count="pokemons.length"
+                 when="{'0': 'I dont have a pokemon',
+                     'one': 'I have one pokemon',
+                     'other': 'I have {} pokemons'}">
+		</ng-pluralize>
+		<ul>
+			<li ng-repeat="pokemon in pokemons">Name: {{ pokemon.name }} Power: {{ pokemon.power}}</li>
+		</ul>
+		<hr>
+		<h3 ng-show="pokemons.length < 5">You need to find more pokemon to be a master</h3>
+		<h3 ng-show="pokemons.length >= 5">You're a pokemon master</h3>
+		<hr>
+		Enter your favorite color: <input type="text" ng-model="color"> <br>
+		<div ng-switch="color">
+			<div ng-switch-when="red">Your favorite color is red</div>
+			<div ng-switch-when="blue">Your favorite color is blue</div>
+			<div ng-switch-when="yellow">Your favorite color is yellow</div>
+			<div ng-switch-default>Please enter a valid color</div>
+		</div>
+	</div>
+
+	<script src='../../js/angular.min.js'></script>
+	<script src='app.js'></script>
+</body>
+</html>

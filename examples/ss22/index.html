@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app" ng-cloak>
+<head>
+	<meta charset="UTF-8" >
+	<title>Document</title>
+	<link rel="stylesheet" href="../../css/bootstrap.css">
+	<style>
+	[ng\:cloak], [ng-cloak], .ng-cloak{
+		display: none;
+	}
+	</style>
+</head>
+<body>
+	<div class='container'>
+		<div ng-controller="UserController">
+			<table class='table'>
+				<thead>
+					<tr><th>Name</th><th>Level</th></tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="user in users">
+						<td>{{user.name}}</td>
+						<td>{{user.level}}</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<script src='../../js/angular.min.js'></script>
+	<script src='app.js'></script>
+</body>
+</html>

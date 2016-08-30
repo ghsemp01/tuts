@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app" ng-cloak>
+<head>
+	<meta charset="UTF-8" >
+	<title>Document</title>
+	<style>
+	[ng\:cloak], [ng-cloak], .ng-cloak{
+		display: none;
+	}
+	</style>
+</head>
+<body>
+	<div ng-controller="PokemonCtrl">
+		<h3>{{ title }}</h3>
+		Enter pokemon name: <input type="text" ng-model="pokemon_name"><br>
+		Enter power: <input type="text" ng-model="pokemon_power"> <br>
+		<button ng-click="addPokemon()">Add Pokemon</button> <br>
+ 
+		<ng-pluralize count="pokemons.length"
+                 when="{'0': 'I dont have a pokemon',
+                     'one': 'I have one pokemon',
+                     'other': 'I have {} pokemons'}">
+		</ng-pluralize>
+		<ul>
+			<li ng-repeat="pokemon in pokemons">Name: {{ pokemon.name }} Power: {{ pokemon.power}}</li>
+		</ul>
+		<hr>
+		<h3 ng-show="pokemons.length < 5">You need to find more pokemon to be a master</h3>
+		<h3 ng-show="pokemons.length >= 5">You're a pokemon master</h3>
+		
+	</div>
+
+	<script src='../../js/angular.min.js'></script>
+	<script src='app.js'></script>
+</body>
+</html>

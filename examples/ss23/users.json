@@ -1,0 +1,20 @@
+[
+		{
+			"name": "Jayson Temporas",
+			 "level": 25,
+			 "description": "Lorem ipsum dolor sit amet, pri eu placerat neglegentur. Nec assum epicuri tractatos ad, vim ei velit bonorum. Posse eripuit vix ea, rebum tollit accusamus duo no. Aliquid consulatu ullamcorper in mei. Aperiam alterum et vix, mel ut copiosae necessitatibus. Ne menandri conceptam his, quidam doctus no nec.",
+			 "imageUrl": "images/temp.jpg"
+		},
+		{
+			"name": "Michael Badilla", 
+			"level": 10,
+			"description": "Lorem ipsum dolor sit amet, pri eu placerat neglegentur. Nec assum epicuri tractatos ad, vim ei velit bonorum. Posse eripuit vix ea, rebum tollit accusamus duo no. Aliquid consulatu ullamcorper in mei. Aperiam alterum et vix, mel ut copiosae necessitatibus. Ne menandri conceptam his, quidam doctus no nec.",
+			"imageUrl": "images/bads.jpg"
+		},
+		{
+			"name": "Jeremiah Lachica", 
+			"level": 22,
+			"description": "Lorem ipsum dolor sit amet, pri eu placerat neglegentur. Nec assum epicuri tractatos ad, vim ei velit bonorum. Posse eripuit vix ea, rebum tollit accusamus duo no. Aliquid consulatu ullamcorper in mei. Aperiam alterum et vix, mel ut copiosae necessitatibus. Ne menandri conceptam his, quidam doctus no nec.",
+			"imageUrl": "images/jer.jpg"	
+		}
+]

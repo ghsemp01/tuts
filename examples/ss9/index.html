@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+	<meta charset="UTF-8" >
+	<title>Document</title>
+</head>
+<body>
+	<!-- START OF NAME CONTROLLER -->
+	<div ng-controller="NameCtrl"> 
+		<h3>Name: </h3>
+		<input type="text" ng-model="firstname"> <input type="text" ng-model="lastname"> <br><br>
+		My name is {{ firstname }} {{lastname}}
+		<h3>Addtl Info: </h3>
+		<ul>
+			<li>Adress: {{ info.address }}</li>
+			<li>Work: {{ info.work }}</li>
+			<li>Status: {{ info.status }}</li>
+		</ul>
+	</div>
+	<!-- END OF NAME CONTROLLER -->                     
+	<h3>
+		Outside Controller: 
+	</h3>
+	My name is  {{ firstname }} {{lastname}}
+	<script src='../../js/angular.min.js'></script>
+	<script>
+	var app = angular.module('app',[]);
+	app.controller('NameCtrl',function($scope){
+		$scope.firstname= "Jayson";
+		$scope.lastname = "Temporas";
+		$scope.info = {
+			address: "123 baker st.",
+			work: "Singer",
+			status: "Taken for granted",
+		};
+	});
+	</script>
+</body>
+</html>

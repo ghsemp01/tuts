@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app" ng-cloak>
+<head>
+	<meta charset="UTF-8" >
+	<title>Document</title>
+	<link rel="stylesheet" href="../../css/bootstrap.css">
+	<style>
+	[ng\:cloak], [ng-cloak], .ng-cloak{
+		display: none;
+	}
+	img{
+		max-height: 300px;
+	}
+	</style>
+</head>
+<body>
+
+	<div class="container-fluid">
+	<nav class="navbar navbar-default">
+	    <div class="container">
+	      <div class="navbar-header">
+	        <a class="navbar-brand" href="/">Gotta Catch Them All</a>
+	      </div>
+
+	      <ul class="nav navbar-nav navbar-right">
+	        <li><a href="#pokemon"> Pokemon</a></li>
+	        <li><a href="#user"> User</a></li>
+	     
+	      </ul>
+	    </div>
+	  </nav>
+		<ng-view></ng-view>
+	</div>
+	<script src='../../js/angular.min.js'></script>
+	<script src='../../js/angular-route.min.js'></script>
+	<script src='Model.js'></script>
+	<script src='app.js'></script>
+</body>
+</html>

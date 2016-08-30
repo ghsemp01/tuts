@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app" ng-cloak>
+<head>
+	<meta charset="UTF-8" >
+	<title>Document</title>
+	<style>
+	[ng\:cloak], [ng-cloak], .ng-cloak{
+		display: none;
+	}
+	</style>
+</head>
+<body>
+	<div ng-controller="PokemonCtrl">
+		<h3>{{ title }}</h3>
+		<ng-pluralize count="pokemons.length"
+                 when="{'0': 'I dont have a pokemon',
+                     'one': 'I have one pokemon',
+                     'other': 'I have {} pokemons'}">
+		</ng-pluralize>
+		<ul>
+			<li ng-repeat="pokemon in pokemons">Name: {{ pokemon.name }} Power: {{ pokemon.power}}</li>
+		</ul>
+		
+	</div>
+
+	<script src='../../js/angular.min.js'></script>
+	<script src='app.js'></script>
+</body>
+</html>

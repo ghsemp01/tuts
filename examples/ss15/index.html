@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app" ng-cloak>
+<head>
+	<meta charset="UTF-8" >
+	<title>Document</title>
+	<link rel="stylesheet" href="../../css/bootstrap.css">
+	<style>
+	[ng\:cloak], [ng-cloak], .ng-cloak{
+		display: none;
+	}
+	
+	</style>
+</head>
+<body>
+	<div class="container-fluid">
+		<div ng-controller="PokemonCtrl">
+			<h3>{{ title }}</h3>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="form-group">
+					Enter pokemon name: <input class='form-control' type="text" ng-model="pokemon_name">
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="form-group">
+					Enter power: <input class='form-control' type="text" ng-model="pokemon_power"> 
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="form-group">
+					<button class='btn btn-primary' ng-click="addPokemon()">Add Pokemon</button> 
+					</div>
+				</div>
+			</div>
+			
+			<div class="alert alert-info">
+					<ng-pluralize count="pokemons.length"
+	                 when="{'0': 'I dont have a pokemon',
+	                     'one': 'I have one pokemon',
+	                     'other': 'I have {} pokemons'}">
+				</ng-pluralize>
+			</div>
+			<table class="table">
+				<thead><tr><th>Name</th><th>Power</th></tr></thead>
+				<tbody>
+					<tr ng-repeat="pokemon in pokemons">
+						<td>{{pokemon.name}}</td>
+						<td>{{pokemon.power}}</td>
+					</tr>
+				</tbody>
+			</table>
+	
+			<hr>
+			<h3 ng-show="pokemons.length < 5">You need to find more pokemon to be a master</h3>
+			<h3 ng-show="pokemons.length >= 5">You're a pokemon master</h3>
+		</div>
+	</div>
+	<script src='../../js/angular.min.js'></script>
+	<script src='app.js'></script>
+</body>
+</html>

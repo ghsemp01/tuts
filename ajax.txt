@@ -1,0 +1,27 @@
+   $http.get("welcome.htm")
+    .then(function(response) {
+        $scope.myWelcome = response.data;
+    });
+
+
+    $http({
+        method : "GET",
+        url : "welcome.htm"
+    }).then(function mySucces(response) {
+        $scope.myWelcome = response.data;
+    }, function myError(response) {
+        $scope.myWelcome = response.statusText;
+    });
+
+    var responsePromise = $http.get("/angularjs-examples/json-test-data.jsp");
+    responsePromise.success(function(data, status, headers, config) {
+            $scope.myData.fromServer = data.title;
+      });
+     responsePromise.error(function(data, status, headers, config) {
+             alert("AJAX failed!");
+       });
+
+$http.get(url, config)
+$http.post(url, data, config)
+$http.put(url, data, config)
+$http.delete(url, config)

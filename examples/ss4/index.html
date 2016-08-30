@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input id="name" type="text"> 
+	Hello <span id='name_container'></span>
+
+
+	<script>
+		window.onload = function(){
+			var name = document.getElementById('name');
+			var name_container = document.getElementById('name_container');
+			name.addEventListener('keyup', function(){
+	        	var value = name.value;
+	        	name_container.innerHTML = value;
+    	  	});
+		};
+	</script>
+</body>
+</html>

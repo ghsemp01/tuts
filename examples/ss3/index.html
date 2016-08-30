@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input id="name" type="text"> Hello!
+
+	<script>
+		window.onload = function(){
+			var name = document.getElementById('name');
+			name.addEventListener('keyup', function(){
+	        	console.log('Key up !!!');
+    	  	});
+		};
+	</script>
+</body>
+</html>
