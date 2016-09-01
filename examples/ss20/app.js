@@ -1,4 +1,3 @@
-	// create the module and name it scotchApp
 	var app = angular.module('app', ['ngRoute']);
 
 	// configure our routes
