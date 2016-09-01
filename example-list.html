@@ -2,10 +2,16 @@
   
   <h1>{{examples.length}} Angular.js Examples</h1>
  <p>Inpired by Curran Kelleher, Derek Banas and the official AngularJs Documentation</p>
+
+<div class="row">
+  <div class="col-sm-6 col-md-4" ng-repeat="example in examples">
+    <div class="thumbnail">
+      <div class="caption">
+        <h3><a href="#/{{example.number}}">Example {{example.number}}</a></h3>
+       <p> {{example.message}}</p>
+   
+      </div>
+    </div>
+  </div>
  
 </div>
-<ul>
-  <li ng-repeat="example in examples">
-    <a href="#/{{example.number}}">Example {{example.number}}</a> - {{example.message}}
-  </li>
-<ul>
