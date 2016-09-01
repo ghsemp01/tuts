@@ -205,7 +205,7 @@
     "message": "Add routes in our pokemon app",
     "files": [
       "index.html",
-      "app.js"
+      "app.js", "pokemon.html","user.html"
     ],
       "url": "index.html",
       "runUrl": "index.html"
